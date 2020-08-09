@@ -136,7 +136,7 @@ public class RegularHexpressionsController
 		}
 
 		isSolved = true;
-		Debug.LogFormat("{0} Pass.", logPrefix);
+		Debug.LogFormat("{0} Disarmed.", logPrefix);
 		return SubmitResult.SUCCESS;
 	}
 
@@ -196,7 +196,7 @@ public class RegularHexpressionsController
 		int rowOffset = bomb.GetSolvableModuleNames().Count() % (PuzzleData.REGEX_TABLE_ROWS - 1) + 1;
 		int finalRow = (initialRow + rowOffset) % PuzzleData.REGEX_TABLE_ROWS;
 		Debug.LogFormat("{0} Bomb has {1} non-needy modules,"
-		+ " so regex row offset is {1} mod {2} = {3}."
+		+ " so regex row offset is ({1} mod {2}) + 1 = {3}."
 		+ " Final row is ({4} + {3}) mod {5} = {6}.",
 			logPrefix,
 			bomb.GetSolvableModuleNames().Count(),
@@ -210,7 +210,7 @@ public class RegularHexpressionsController
 		int colOffset = (bomb.GetBatteryCount() + bomb.GetIndicators().Count()) % (PuzzleData.REGEX_TABLE_COLS - 1) + 1;
 		int finalCol = (initialCol + colOffset) % PuzzleData.REGEX_TABLE_COLS;
 		Debug.LogFormat("{0} Module has {1} batteries and {2} indicators,"
-		+ " so regex column offset is ({1} + {2}) mod {3} = {4}."
+		+ " so regex column offset is (({1} + {2}) mod {3}) + 1 = {4}."
 		+ " Final column is ({5} + {4}) mod {6} = {7}.",
 			logPrefix,
 			bomb.GetBatteryCount(),
