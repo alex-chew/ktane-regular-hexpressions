@@ -18,8 +18,8 @@ MonoBehaviour:
     used to correctly parse HTML. Every time you attempt to parse HTML with regular
     expressions, the unholy child we\u033F\u0314\u0309eps the blood of virgins, and
     Russian hackers pwn your alarm clock.\n\nHave you tried using regex to defuse
-    a bomb instead?\n\nModule created by knawk.\n\nPDF manual: https://drive.google.com/file/d/134eXJycdy8ogyG7erqKNXP7b9hVEQDaq/view?usp=sharing\nHTML
-    manual forthcoming.\n\nModuleID: RegularHexpressions"
-  version: v1.0.0
+    a bomb instead?\n\nModule created by knawk.\n\nPDF manual: https://ktane.timwi.de/PDF/Regular%20Hexpressions.pdf\nHTML
+    manual: https://ktane.timwi.de/HTML/Regular%20Hexpressions.html\n\nModuleID: RegularHexpressions"
+  version: v1.0.1
   outputFolder: build
   previewImage: {fileID: 2800000, guid: b3a91aa7ec3f1df47baf08c034f4cbef, type: 3}
