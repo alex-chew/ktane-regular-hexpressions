@@ -171,9 +171,6 @@ public class TwitchPlaysID : MonoBehaviour
 
 	private void Start()
 	{
-		// TODO remove
-		return;
-
 		if (TPCoroutineQueue == null)
 			TPCoroutineQueue = new GameObject().AddComponent<TPCoroutineQueue>();
 
@@ -904,7 +901,7 @@ public class TwitchPlaysID : MonoBehaviour
 		Match match;
 		float messageDelayTime;
 		// Within the messages, allow variables:
-		// {0} = user’s nickname
+		// {0} = userï¿½s nickname
 		// {1} = Code (module number)
 		if (message.RegexMatch(out match, @"^senddelayedmessage ([0-9]+(?:\.[0-9])?) (\S(?:\S|\s)*)$") && float.TryParse(match.Groups[1].Value, out messageDelayTime)) {
 			Debug.LogFormat("Sending delayed message \"{0}\" in {1} seconds", match.Groups[2].Value, match.Groups[1].Value);
